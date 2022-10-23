@@ -5,4 +5,7 @@
     <string name="error_desc">Error! \n Try again</string>
     <string name="image_content_desc">Product Image URL</string>
     <string name="show_more_title">Show More</string>
+    <string name="network_alert_title">Network Error</string>
+    <string name="network_alert_desc">Please, check your network connection!</string>
+    <string name="cancel_button">Cancel</string>
 </resources>

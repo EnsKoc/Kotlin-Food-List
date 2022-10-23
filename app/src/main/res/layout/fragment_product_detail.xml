@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="selectedProduct"
+            type="com.eneskoc.kotlin_food_list.model.ProductDetail" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.CountryFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_content_desc"
+            android:downloadUrl="@{selectedProduct.image}"
+            android:minWidth="300dp"
+            android:minHeight="300dp"
+            android:layout_marginTop="16dp"
+            android:padding="@dimen/min_padding"
+            app:layout_constraintBottom_toTopOf="@id/productDetailNameTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+        <TextView
+            android:id="@+id/productDetailNameTv"
+            style="@style/RegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/standard_vertical_margin"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/standard_padding"
+            android:text='@{selectedProduct.name}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productImage" />
+
+        <TextView
+            android:id="@+id/productDetailPriceTv"
+            style="@style/HintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_margin"
+            android:layout_marginVertical="@dimen/standard_vertical_margin"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/standard_padding"
+            android:text='@{Integer.toString(selectedProduct.price) + "$"}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDetailNameTv" />
+
+
+        <TextView
+            android:id="@+id/productDetailDescTv"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/standard_horizontal_margin"
+            android:layout_marginVertical="@dimen/standard_vertical_margin"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/standard_padding"
+            android:text="@{selectedProduct.description}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDetailPriceTv" />
+
+
+
+        <TextView
+            android:id="@+id/productDetailErrorTv"
+            style="@style/RegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/error_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/productDetailLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/candy_apple_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
