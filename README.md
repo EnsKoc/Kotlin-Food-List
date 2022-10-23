@@ -1,7 +1,7 @@
-# Kotlin Food List
+# Kotlin Food List 
 
-Food List application; MVVM(Model View ViewModel) sample in Kotlin using the components ViewModel, LiveData, the libraries Retrofit, Coroutine and Data Binding .
-
+Food List application; Example of MVVM(Model View ViewModel) using ViewModel, LiveData, Retrofit, Coroutine and Data Binding libraries in Kotlin.
+This project retrieves the product data from the [API-PorductList](https://s3-eu-west-1.amazonaws.com/developer-application-test/cart/list) & [API-ProductDetail](https://s3-eu-west-1.amazonaws.com/developer-application-test/cart/%7Bproduct_id%7D/detail) and displays it to the user and allows the user to examine the product details.
 
 ## Languages, libraries and tools used
 
@@ -21,5 +21,7 @@ Food List application; MVVM(Model View ViewModel) sample in Kotlin using the com
 * Android O (API 26)
 * Latest Android SDK Tools and build tools.
 
-## Architecture
-The architecture of Food List project follows the principles of Clean Architecture. Here's how the sample project implements it:
+
+## Demo
+
+
