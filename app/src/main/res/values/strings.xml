@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Kotlin-Food-List</string>
+    <string name="app_name">Food List</string>
+
+    <string name="product_title">Products</string>
+    <string name="error_desc">Error! \n Try again</string>
+    <string name="image_content_desc">Product Image URL</string>
+    <string name="show_more_title">Show More</string>
 </resources>

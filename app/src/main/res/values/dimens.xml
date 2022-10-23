@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_vertical_margin">16dp</dimen>
+    <dimen name="standard_horizontal_margin">16dp</dimen>
+
+    <dimen name="standard_vertical_margin_2">8dp</dimen>
+    <dimen name="standard_horizontal_margin_2">8dp</dimen>
+
+    <dimen name="standard_vertical_margin_3">4dp</dimen>
+    <dimen name="standard_horizontal_margin_3">4dp</dimen>
+
+    <dimen name="card_corner_default_radius">10dp</dimen>
+    <dimen name="card_view_margin">10dp</dimen>
+
+    <dimen name="bottom_bar_vertical_margin">16dp</dimen>
+    <dimen name="bottom_bar_horizontal_margin">16dp</dimen>
+
+    <dimen name="top_bar_vertical_margin">16dp</dimen>
+
+    <dimen name="standard_padding">16dp</dimen>
+
+    <dimen name="min_padding">5dp</dimen>
+
+    <dimen name="max_height">500dp</dimen>
+    <dimen name="max_width">500dp</dimen>
+    <dimen name="min_height">100dp</dimen>
+    <dimen name="min_width">100dp</dimen>
+
+
+</resources>
